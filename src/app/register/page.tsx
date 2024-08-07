@@ -1,10 +1,10 @@
 "use client"
-import Image from 'next/image'
+import Image from '                                 '
 import { useState } from 'react';
 import Link from 'next/link'
 
-const RegisterPage = () => {
-    const [email, setEmail] = useState('');
+export default function RegisterPage() {
+    const  [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     function handleFormSubmit(e:ChangeEvent<HTMLInputElement>) {
@@ -56,5 +56,5 @@ const RegisterPage = () => {
     );
 };
 
-export default RegisterPage;
+
 

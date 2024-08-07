@@ -2,11 +2,11 @@ import Image from "next/image";
 
 
 
-const Hero = () => {
+export default function Hero() 
+{
   return (
-      <section className='grid grid-cols-2 mt-16 max-w-[1536px] mx-auto'>
-
-        <div className='w-full mx-auto flex  px-10'>
+      <section className='.hero mt-16 max-w-[1536px] mx-auto'>
+      <div className='w-full mx-auto flex  px-10'>
           {/*textContainer*/}
             <div className={'flex flex-col pt-10'}>
                 <h1 className="text-3xl font-semibold">
@@ -21,13 +21,14 @@ const Hero = () => {
                     Pizza: The Simple Joy That Completes Your Day!
                 </p>
 
+
                 <div className="flex gap-4 text-sm">
                     <button
-                        className="flex items-center justify-center bg-green-600 hover:bg-green-800 transition-colors uppercase gap-2 text-white px-4 py-2 rounded-full">
+                        className="flex items-center justify-center bg-red-700 hover:bg-red-500 transition-all  duration-300 uppercase gap-2 text-slate-100 px-4 py-2 rounded-full">
                         Order now
 
                     </button>
-                    <button className="flex items-center border-0 gap-2 py-2 px-2 text-gray-900 bg-green-300 hover:bg-green-600 transition-colors font-semibold rounded-md">
+                    <button className="flex items-center border-0 gap-2 py-2 px-4 text-slate-100 bg-red-500 hover:bg-red-400 transition-colors font-semibold rounded-md">
                         Learn more
 
                     </button>
@@ -36,14 +37,13 @@ const Hero = () => {
             </div>
 
             {/*imageContainer*/}
-            <div className="hidden flex-shrink-0 md:block mx-auto pt-10">
-                {/*<Image src='/pizza.png' alt='pizza' width={400} height={400}/>*/}
+            <div className="relative px-10 py-20 flex-shrink-0">
+                <Image src='/pizza.png'  width={400} height={400}  alt={'sallad'} />
             </div>
         </div>
 
       </section>
   )
 }
-export default Hero
 
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 
-const MenuItem = () => {
+export default function MenuItem()  {
     return (
         <div className='rounded-md bg-gray-300 hover:bg-red-300 hover:shadow-md hover:shadow-blue-400 p-2 flex flex-col items-center justify-center'>
             <Image src='/pizza.png' width={80} height={80} alt='nice pizza' />
@@ -11,4 +11,3 @@ const MenuItem = () => {
         </div>
     );
 };
-export default MenuItem

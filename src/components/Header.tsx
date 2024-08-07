@@ -6,9 +6,9 @@ import React from "react";
 
 
 
-const Header = () => {
-
-    return (
+export default function Header() 
+{
+  return (
         <header className={'bg-green-600 w-full h-16 px-6 py-2 fixed top-0 left-0'}>
             <div className="md:flex items-center hidden justify-between">
                 <nav className="flex items-center justify-center gap-8 text-gray-100 font-semibold">
@@ -32,7 +32,7 @@ const Header = () => {
 
     )
 }
-export default Header
+
 
 
 //import { useState} from "react";
